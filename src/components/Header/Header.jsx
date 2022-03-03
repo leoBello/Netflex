@@ -80,7 +80,6 @@ const Header = () => {
           <input
             type="text"
             className={`search-input` + (search ? " active" : "")}
-            placeholder="Search"
             placeholder="Titles, people, genres"
           ></input>
         </div>

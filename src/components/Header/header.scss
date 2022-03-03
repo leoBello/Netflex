@@ -48,10 +48,6 @@
     }
 
     .search-container {
-      // -webkit-transition: all 2s ease-in;
-      // -moz-transition: all 2s ease-in;
-      // -o-transition: all 2s ease-in;
-      // transition: all 2s ease-in;
       &.active {
         justify-content: flex-start;
         border: 1px solid white;
