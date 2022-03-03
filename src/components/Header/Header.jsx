@@ -14,9 +14,7 @@ const Brand = () => (
 
 const NavigationItem = ({ name }) => (
   <div className="navigation-item">
-    <li>
-      <a href="#">{name}</a>
-    </li>
+    <li>{name}</li>
   </div>
 );
 
