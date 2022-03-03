@@ -1,0 +1,45 @@
+.banner {
+  padding-top: 40vh;
+  position: relative;
+  height: 448px;
+  color: white;
+  object-fit: contain;
+  height: 55vh;
+  width: auto;
+  font-family: "NetflixSansMedium";
+
+  .banner-content {
+    margin-left: 2rem;
+    width: 30vw;
+    display: flex;
+    flex-flow: row wrap;
+    & > * {
+      margin: 0.5rem;
+    }
+  }
+
+  .banner-buttons {
+    .banner-button {
+      margin-right: 1.3rem;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      border: none;
+      font-weight: bold !important;
+      cursor: pointer;
+      font-size: 1.2rem;
+      height: 3rem;
+
+      &.info-button {
+        background-color: rgba(93, 95, 96, 0.6);
+        color: white;
+      }
+
+      .inner-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+  }
+}

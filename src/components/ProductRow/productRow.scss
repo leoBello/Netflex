@@ -1,0 +1,93 @@
+.product-row {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .product-row-title {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    color: rgb(255, 255, 255);
+    margin: 0.5rem 0;
+
+    h4 {
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(1, 0.02, 1, 1);
+    }
+
+    span {
+      transform: translateX(-5rem);
+      margin-top: 3rem;
+      transition: transform 0.3s linear;
+    }
+
+    &:hover {
+      h4 {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0.5rem);
+      }
+      span {
+        transform: translateX(0.5rem);
+      }
+    }
+  }
+
+  .product-row-items {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    column-gap: 0.5rem;
+    color: rgb(255, 255, 255);
+    .product-row-item {
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.08);
+      }
+    }
+  }
+}
+
+.product-row-item {
+  display: flex;
+  flex-flow: column nowrap;
+  &:hover {
+    border-radius: 0.3rem;
+
+    .card-description {
+      display: block;
+      position: relative;
+      min-width: 100%;
+    }
+  }
+
+  img {
+    transition: all ease 0.1s;
+    width: 16rem;
+    height: auto;
+    border-radius: 0.3rem;
+  }
+}
+
+.chevron::before {
+  border-style: solid;
+  border-width: 0.25em 0.25em 0 0;
+  content: "";
+  display: inline-block;
+  height: 0.45em;
+  left: 0.15em;
+  position: relative;
+  top: 0.3em;
+  transform: rotate(-45deg);
+  vertical-align: top;
+  width: 0.45em;
+}
+.chevron.right:before {
+  left: 0;
+  transform: rotate(45deg);
+}
