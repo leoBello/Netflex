@@ -9,7 +9,6 @@ const ProductRow = ({ title, fetchUrl }) => {
   useEffect(() => {
     async function fetchData() {
       const request = await instance.get(fetchUrl);
-      console.log(request);
       setMovies(request.data.results);
       return request;
     }

@@ -17,7 +17,7 @@ const Home = () => (
         fetchUrl={requests.fetchDocumentaries}
       ></ProductRow>
       <ProductRow
-        title="Comedi Movies"
+        title="Comedy Movies"
         fetchUrl={requests.fetchComediMovies}
       ></ProductRow>
     </Banner>
